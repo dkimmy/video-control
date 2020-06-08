@@ -11,6 +11,9 @@ while 1:
     print (incoming)
     if "Play/Pause" in incoming:
         pyautogui.typewrite(['space'], 0.2)
-    
+    if 'Forward 10' in incoming:
+        pyautogui.hotkey("l")
+    if "Backwards 10" in incoming:
+        pyautogui.hotkey("j")
 
     incoming = ""
