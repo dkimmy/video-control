@@ -39,7 +39,10 @@ void loop() {
   {Serial.println("Play/Pause"); delay (500);}
 
   if ((distM > 10 && distM  < 20)) 
-  {Serial.println("Volup"); delay (500);}
+  {Serial.println("Backwards 10"); delay (500);}
+
+  if (distM >0 && distM <10)
+  {Serial.println("Forward 10"); delay (500);}
 
   delay(200);
 }
